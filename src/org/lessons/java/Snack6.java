@@ -14,13 +14,17 @@ public class Snack6 {
 		
 		in.close();
 		
+		int value = 0;
+		
 		for (int i = 0; i < strLength; i++) {
 
 			char c = strNum.charAt(i);
 			
 			int digit = Integer.valueOf(c + "");
 			
-			System.out.print(digit);
+			value = value * 10 + digit;
 		}
+		
+		System.out.print(value);
 	}
 }

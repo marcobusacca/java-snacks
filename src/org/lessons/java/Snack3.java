@@ -8,14 +8,11 @@ public class Snack3 {
 		
 		int sum = 0;
 		
-		for (int i = 0; i < numberArray.length; i++) {
-
-			if (i % 2 != 0) {
+		for (int i = 1; i < numberArray.length; i+=2) {
 				
-				sum+= numberArray[i];
+			sum+= numberArray[i];
 				
-				System.out.println(i + " ---> " + numberArray[i]);
-			}
+			System.out.println(i + " ---> " + numberArray[i]);
 		}
 		
 		System.out.println("Somma: " + sum);
